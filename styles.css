@@ -141,7 +141,7 @@ a {
   }
 }
 
-@media only screen and (max-height: 1300px) {
+@media only screen and (max-height: 700px) {
   header {
     font-size: 1px;
   }
@@ -209,7 +209,7 @@ a {
 }
 
 .selected-stores-p {
-  margin-bottom: 2vh;
+  margin-bottom: 1vh;
 }
 
 .selected-stores:hover {
