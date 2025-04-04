@@ -119,6 +119,10 @@ a {
   #bottom-left {
     display: none;
   }
+  .buy-now,
+  p {
+    margin-bottom: 5vh;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -135,9 +139,12 @@ a {
   .issuelabeler {
     font-size: 1.6em !important;
   }
-  .buy-now,
-  .or-in {
+  .buy-now {
     font-size: 1.3em !important;
+  }
+  .buy-now,
+  p {
+    margin-bottom: 5vh;
   }
 }
 
