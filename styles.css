@@ -130,7 +130,8 @@ a {
   }
   header {
     text-wrap: nowrap;
-    font-size: 5vw;
+    font-size: 3.4vw;
+    margin: 2px !important;
   }
   .issuelabeler {
     font-size: 1.6em !important;
