@@ -13,7 +13,7 @@ body {
 }
 
 .loader {
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
   position: fixed;
@@ -141,9 +141,9 @@ a {
   }
 }
 
-@media only screen and (max-height: 500px) {
+@media only screen and (max-height: 100px) {
   .selected-stores-p {
-    margin-bottom: 5vh;
+    margin-bottom: 6vh;
   }
 }
 
