@@ -139,12 +139,6 @@ a {
   .buy-now {
     font-size: 1.3em !important;
   }
-}
-
-@media only screen and (max-height: 700px) {
-  header {
-    font-size: 1px;
-  }
   .selected-stores-p {
     padding-bottom: 10vh !important;
     margin-bottom: 20vh !important;
