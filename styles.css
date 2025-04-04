@@ -13,7 +13,7 @@ body {
 }
 
 .loader {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   position: fixed;
@@ -140,6 +140,12 @@ a {
   }
 }
 
+@media only screen and (max-height: 500px) {
+  .selected-stores-p {
+    margin-bottom: 5vh;
+  }
+}
+
 #issue8,
 #issue7,
 #issue6,
@@ -195,6 +201,10 @@ a {
   color: white;
   font-weight: 600;
   cursor: pointer;
+}
+
+.selected-stores-p {
+  margin-bottom: 2vh;
 }
 
 .selected-stores:hover {
