@@ -13,7 +13,7 @@ body {
 }
 
 .loader {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   position: fixed;
@@ -121,6 +121,26 @@ a {
   }
 }
 
+@media only screen and (max-width: 800px) {
+  .loader {
+    font-size: 20px;
+    text-wrap: wrap;
+    text-align: center;
+    margin: auto;
+  }
+  header {
+    text-wrap: nowrap;
+    font-size: 5vw;
+  }
+  .issuelabeler {
+    font-size: 1.6em !important;
+  }
+  .buy-now,
+  .or-in {
+    font-size: 1.3em !important;
+  }
+}
+
 #issue8,
 #issue7,
 #issue6,
@@ -152,14 +172,14 @@ a {
 }
 
 .issuelabeler {
-  font-size: 3.5vw;
-  font-weight: 300;
+  font-size: 2.9vw;
+  font-weight: 100;
   cursor: default;
 }
 
 .buy-now,
 .or-in {
-  margin: 1vw;
+  margin: 2vh;
 }
 
 .buy-now {
