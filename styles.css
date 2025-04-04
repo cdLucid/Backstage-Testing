@@ -13,7 +13,7 @@ body {
 }
 
 .loader {
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
   position: fixed;
@@ -176,9 +176,8 @@ a {
   cursor: default;
 }
 
-.buy-now,
-.or-in {
-  margin: 2vh;
+.buy-now {
+  margin: 1vh;
 }
 
 .buy-now {
