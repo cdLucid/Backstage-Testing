@@ -13,18 +13,19 @@ body {
 }
 
 .loader {
- display: flex;
- justify-content: center;
- position: fixed; 
- top: 0;
- align-items: center;
- height: 100vh;
- width: 100vw;
- background-color: #222;
- color: white;
- font-family: "Roboto Mono", monospace !important;
- z-index: 100;
- user-select: none;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #222;
+  color: white;
+  font-size: 3vh;
+  font-family: "Roboto Mono", monospace !important;
+  z-index: 100;
+  user-select: none;
 }
 
 .loader {
@@ -34,8 +35,14 @@ body {
 }
 
 @keyframes slideDown {
-  0% { opacity: 1; transform: translateY(0); }
-  100% { opacity: 0; transform: translateY(100vh); } /* Moves loader completely off-screen */
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(100vh);
+  }
 }
 
 .loader.hidden {
@@ -137,15 +144,14 @@ a {
 }
 
 .issuelabeler {
-  font-size: 1.2em;
+  font-size: 3.5vw;
   font-weight: 500;
   cursor: default;
-  margin: 10px;
 }
 
 .buy-now,
-.selected-stores {
-  margin-top: 15px;
+.or-in {
+  margin: 1vw;
 }
 
 .buy-now {
@@ -153,7 +159,6 @@ a {
   color: white;
   font-weight: 800;
   cursor: pointer;
-  margin: 5px;
 }
 
 .buy-now:hover {
