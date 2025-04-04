@@ -141,7 +141,7 @@ a {
   }
 }
 
-@media only screen and (max-height: 100px) {
+@media only screen and (max-height: 1000px) {
   .selected-stores-p {
     margin-bottom: 6vh;
   }
