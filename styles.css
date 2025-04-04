@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  transition: all 1s ease-in-out;
+}
+
+html,
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.loader {
+ display: flex;
+ justify-content: center;
+ position: fixed; 
+ top: 0;
+ align-items: center;
+ height: 100vh;
+ width: 100vw;
+ background-color: #222;
+ color: white;
+ font-family: "Roboto Mono", monospace !important;
+ z-index: 100;
+ user-select: none;
+}
+
+.loader {
+  opacity: 1;
+  transform: translateY(0);
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+@keyframes slideDown {
+  0% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(100vh); } /* Moves loader completely off-screen */
+}
+
+.loader.hidden {
+  animation: slideDown 1s ease-in-out forwards;
+  pointer-events: none;
+}
+#full-page {
+  z-index: -1;
+  height: 100vh;
+  width: 100vw;
+  overflow: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+#fixed-content {
+  position: fixed;
+}
+
+#top-left {
+  position: fixed;
+  left: 0;
+  margin: 2vw;
+}
+
+#top-right {
+  position: fixed;
+  right: 0;
+  margin: 2vw;
+}
+
+#bottom-left {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+#bottom-left p,
+#bottom-right,
+ul {
+  margin: 20px;
+}
+
+#bottom-left p {
+  font-weight: 800;
+}
+
+#bottom-right,
+ul li,
+a {
+  list-style: none;
+  text-decoration: none;
+  margin-top: 10px;
+  color: #000;
+}
+
+#bottom-right {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+@media only screen and (max-width: 990px) {
+  #top-right,
+  #bottom-right,
+  #bottom-left {
+    display: none;
+  }
+}
+
+#issue8,
+#issue7,
+#issue6,
+#issue5,
+#issue4,
+#issue3,
+#issue2,
+#issue1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  scroll-snap-align: start;
+}
+
+#issue8 img,
+#issue7 img,
+#issue6 img,
+#issue5 img,
+#issue4 img,
+#issue3 img,
+#issue2 img,
+#issue1 img {
+  width: 60vw;
+  height: 70%;
+  object-fit: contain;
+}
+
+.issuelabeler {
+  font-size: 1.2em;
+  font-weight: 500;
+  cursor: default;
+  margin: 10px;
+}
+
+.buy-now,
+.selected-stores {
+  margin-top: 15px;
+}
+
+.buy-now {
+  text-transform: uppercase;
+  color: white;
+  font-weight: 800;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.buy-now:hover {
+  text-decoration: underline;
+}
+
+.selected-stores {
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.selected-stores:hover {
+  text-decoration: underline;
+}
+
+#issue6 .buy-now,
+#issue6 .selected-stores {
+  color: #e568ac;
+}
