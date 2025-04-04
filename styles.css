@@ -13,7 +13,7 @@ body {
 }
 
 .loader {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   position: fixed;
@@ -141,9 +141,13 @@ a {
   }
 }
 
-@media only screen and (max-height: 1000px) {
+@media only screen and (max-height: 1300px) {
+  header {
+    font-size: 1px;
+  }
   .selected-stores-p {
-    margin-bottom: 6vh;
+    padding-bottom: 3vh !important;
+    margin-bottom: 1vh !important;
   }
 }
 
